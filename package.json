@@ -4,7 +4,10 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose --passWithNoTests --rootDir=./tests",
+    "build": "rimraf ./build && tsc",
+    "watch": "rimraf ./build && tsc -w",
+    "postinstall": "npm run build && npm run test && node ./postinstall.js"
   },
   "repository": {
     "type": "git",
@@ -23,12 +26,14 @@
   "homepage": "https://github.com/dhanuprys/brainly-api#readme",
   "dependencies": {
     "axios": "^0.21.1",
+    "chalk": "^4.1.0",
     "jsdom": "^16.4.0",
     "puppeteer": "^5.5.0",
     "typescript": "^4.1.3"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
+    "@types/chalk": "^2.2.0",
     "@types/jest": "^26.0.20",
     "@types/jsdom": "^16.2.5",
     "@types/puppeteer": "^5.4.2",
