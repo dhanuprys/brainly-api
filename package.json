@@ -1,7 +1,7 @@
 {
   "name": "brainly-api",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "Unofficial brainly.com API",
   "main": "build/index.js",
   "scripts": {
     "test": "jest --verbose --passWithNoTests --rootDir=./tests",
