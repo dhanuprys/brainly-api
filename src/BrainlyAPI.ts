@@ -27,14 +27,14 @@ class BrainlyAPI {
         // jika kedua parameter diisi dengan data yang valid maka 
         // program akan memanggil fungsi callback
         if (typeof config === 'object' && typeof worker === 'function') {
-            Object.assign(config, defaultConfig);
+            config = Object.assign(defaultConfig, config);
 
             if (config.auth === true) {
                 return await worker(
                     new AuthWorker(config.server)
                 );
             }
-
+            
             return await worker(
                 new AnonymousWorker(config.server)
             );
