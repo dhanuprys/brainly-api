@@ -4,7 +4,7 @@
   "description": "Unofficial brainly.com API",
   "main": "build/index.js",
   "scripts": {
-    "test": "jest --verbose --passWithNoTests --rootDir=./tests",
+    "test": "jest --verbose --passWithNoTests --rootDir=./tests_0",
     "release": "rimraf ./build && npm publish",
     "build": "rimraf ./build && tsc",
     "watch": "rimraf ./build && tsc -w",
