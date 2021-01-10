@@ -5,6 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "test": "jest --verbose --passWithNoTests --rootDir=./tests",
+    "release": "rimraf ./build && npm publish",
     "build": "rimraf ./build && tsc",
     "watch": "rimraf ./build && tsc -w",
     "postinstall": "npm run build && npm run test && node ./postinstall.js"
