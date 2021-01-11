@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "test": "npm run jesttest",
-    "jesttest": "jest --passWithNoTests",
+    "jesttest": "jest --verbose --passWithNoTests",
     "release": "rimraf ./build && npm publish && tsc",
     "build": "rimraf ./build && tsc",
     "watch": "rimraf ./build && tsc -w",
