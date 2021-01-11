@@ -1,6 +1,6 @@
 {
   "name": "brainly-api",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Unofficial brainly.com API",
   "main": "build/index.js",
   "scripts": {
@@ -31,6 +31,7 @@
     "chalk": "^4.1.0",
     "jest": "^24.9.0",
     "jsdom": "^16.4.0",
+    "puppeteer": "^5.5.0",
     "rimraf": "^3.0.2",
     "typescript": "^4.1.3"
   },
