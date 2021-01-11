@@ -1,4 +1,4 @@
-const Encryption = require('../build/utils/Encryption');
+const { default: Encryption } = require('../build/utils/Encryption');
 
 describe('test encryption utils', () => {
     test('decrypting a text', () => {
