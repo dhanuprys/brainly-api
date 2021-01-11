@@ -40,6 +40,7 @@
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/chalk": "^2.2.0",
+    "@types/cryptr": "^4.0.1",
     "@types/jest": "^26.0.20",
     "@types/jsdom": "^16.2.5",
     "@types/puppeteer": "^5.4.2"
