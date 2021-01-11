@@ -1,10 +1,10 @@
 {
   "name": "brainly-api",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Unofficial brainly.com API",
   "main": "build/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "release": "rimraf ./build && npm publish",
     "build": "rimraf ./build && tsc",
     "watch": "rimraf ./build && tsc -w",
