@@ -1,7 +1,18 @@
 # BrainlyAPI
 
-## THIS VERSION IS NOT STABLE YET
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dhanuprys/arts/master/brainly-api.jpg">
+  <br>
+  <a href="https://travis-ci.com/dhanuprys/brainly-api"><img src="https://travis-ci.com/dhanuprys/brainly-api.svg?branch=main" alt="Travis CI"></a>
+  <a href="https://github.com/dhanuprys/brainly-api"><img src="https://github.com/dhanuprys/brainly-api/workflows/test/badge.svg" alt="Gitub Action Test Status"></a>
+  <a href="https://circleci.com/gh/dhanuprys/brainly-api"><img src="https://circleci.com/gh/dhanuprys/brainly-api.svg?style=svg" alt="Circle CI Test Status"></a>
+</p>
 
-[![Travis Test Status](https://travis-ci.com/dhanuprys/brainly-api.svg?branch=main)](https://travis-ci.com/dhanuprys/brainly-api)
-![Gitub Action Test Status](https://github.com/dhanuprys/brainly-api/workflows/test/badge.svg)
-[![Circle CI Test Status](https://circleci.com/gh/dhanuprys/brainly-api.svg?style=svg)](https://circleci.com/gh/dhanuprys/brainly-api)
+## Notes
+- This is not the official library from brainly.com
+- This version is not stable yet
+- This library is still under development
+
+## Contact me
+- [Whatsapp](https://wa.me/082145277488)
+- [Instagram](https://instagram.com/dhanuprys)
