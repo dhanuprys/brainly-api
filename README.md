@@ -10,4 +10,7 @@
   <a href="https://circleci.com/gh/dhanuprys/brainly-api"><img src="https://circleci.com/gh/dhanuprys/brainly-api.svg?style=svg" alt="Circle CI Test Status"></a>
 </p>
 
-**THIS VERSION IS NOT STABLE YET!!!**
+## Notes
+- This is not the official library from brainly.com
+- This version is not stable yet
+- This library is still under development
