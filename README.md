@@ -1,7 +1,5 @@
 # BrainlyAPI
 
-## THIS VERSION IS NOT STABLE YET
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/dhanuprys/arts/master/brainly-api.jpg">
 </p>
@@ -11,3 +9,5 @@
   <a href="https://github.com/dhanuprys/brainly-api"><img src="https://github.com/dhanuprys/brainly-api/workflows/test/badge.svg" alt="Gitub Action Test Status"></a>
   <a href="https://circleci.com/gh/dhanuprys/brainly-api"><img src="https://circleci.com/gh/dhanuprys/brainly-api.svg?style=svg" alt="Circle CI Test Status"></a>
 </p>
+
+**THIS VERSION IS NOT STABLE YET!!!**
