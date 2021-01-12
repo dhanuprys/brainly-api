@@ -15,7 +15,7 @@ test('should return correct server information', () => {
     expect(server.Name).toBe('Indonesia');
 });
 
-describe('calling application starter method', () => {
+xdescribe('calling application starter method', () => {
     test('without auth and without config', async () => {
         await BrainlyAPI.startWorker(brainly => {
             expect(brainly).toBeInstanceOf(AnonymousWorker);
@@ -24,6 +24,20 @@ describe('calling application starter method', () => {
 
     test('with auth', async () => {
         await BrainlyAPI.startWorker({ auth: true }, auth => {
+            expect(auth).toBeInstanceOf(AuthWorker);
+        });
+    });
+});
+
+describe('EXPERIMENTAL: calling application starter method', () => {
+    test('without auth and without config', async () => {
+        await BrainlyAPI.startWorker({ experimental: true }, brainly => {
+            expect(brainly).toBeInstanceOf(AnonymousWorker);
+        });
+    });
+
+    test('with auth', async () => {
+        await BrainlyAPI.startWorker({ auth: true, experimental: true }, auth => {
             expect(auth).toBeInstanceOf(AuthWorker);
         });
     });
