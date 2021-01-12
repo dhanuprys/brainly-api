@@ -7,7 +7,8 @@ namespace Configurable {
 
     export interface StarterConfig {
         auth?: boolean,
-        server?: ServerInformation
+        server?: ServerInformation,
+        experimental?: boolean
     }
 }
 

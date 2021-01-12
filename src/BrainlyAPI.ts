@@ -14,15 +14,24 @@ class BrainlyAPI {
         config: Configurable.BrainlyWorker | Configurable.StarterConfig,
         worker?: Configurable.BrainlyWorker
     ): Promise<Promise<any>> {
+        // EXPERIMENTAL
+        let experimentalError: () => void = () => {
+            throw new Error('Experimental Error. Please pass "experimental" property to the config parameter')
+        };
+
         // Konfigurasi-konfigurasi default
         const defaultConfig: Configurable.StarterConfig = {
             auth: false,
-            server: Server.US
+            server: Server.US,
+            experimental: false
         };
 
         // Jika parameter pertama "config", diisi dengan data bertipe "function"
         // maka program akan menganggapnya tidak memiliki konfigurasi
         if (typeof config === 'function') {
+            // EXPERIMENTAL
+            experimentalError();
+
             worker = config as Configurable.BrainlyWorker;
 
             // end method process
@@ -35,6 +44,11 @@ class BrainlyAPI {
         // program akan memanggil fungsi callback
         if (typeof config === 'object' && typeof worker === 'function') {
             config = Object.assign(defaultConfig, config);
+
+            // EXPERIMENTAL
+            if (!config.experimental) {
+                experimentalError();
+            }
 
             // Jika parameter konfigurasi memiliki properti "auth" maka fungsi callback
             // akan dipanggil, kemudian parameter pertama akan diisi dengan objek dari kelas
