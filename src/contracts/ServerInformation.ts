@@ -1,10 +1,8 @@
-import Lessons from '../Lessons';
-
-interface ServerInformation {
+interface ServerInformation<TCategory = {}> {
     Url: string,
     Code: string,
     Name: string,
-    Category: Lessons
+    Category: TCategory
 }
 
 export default ServerInformation;

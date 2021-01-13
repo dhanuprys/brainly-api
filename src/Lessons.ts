@@ -1,41 +1,63 @@
-namespace Lessons {
-    export enum PL {
+class Lessons {
+    static PL = {
 
     }
     
-    export enum RU {
+    static RU = {
 
     }
 
-    export enum ES {
+    static ES = {
 
     }
 
-    export enum PT {
+    static PT = {
 
     }
 
-    export enum TR {
+    static TR = {
 
     }
 
-    export enum RO {
+    static RO = {
 
     }
 
-    export enum ID {
-        
+    static ID = {
+        Matematika: 2,
+        BahasaIndonesia: 1,
+        PPKn: 9,
+        IPS: 10,
+        Biologi: 4,
+        Fisika: 6,
+        Sejarah: 3,
+        BahasaInggris: 5,
+        Seni: 19,
+        Kimia: 7,
+        Geografi: 8,
+        TI: 11,
+        Ekonomi: 12,
+        BahasaArab: 14,
+        BahasaDaerah: 13,
+        Penjaskes: 22,
+        Sosiologi: 20,
+        BahasaLain: 18,
+        Wirausaha: 23,
+        Akuntansi: 21,
+        BahasaJepang: 15,
+        BahasaMandarin: 18,
+        BahasaPerancis: 17
     }
 
-    export enum HI {
+    static HI = {
 
     }
 
-    export enum PH {
+    static PH = {
 
     }
 
-    export enum US {
+    static US = {
 
     }
 }

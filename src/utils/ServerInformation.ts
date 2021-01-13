@@ -2,7 +2,7 @@ import { default as ServerInformationContract } from '../contracts/ServerInforma
 import Lessons from '../Lessons';
 
 class ServerInformation {
-    static create(url: string, code: string, name: string, category: Lessons): ServerInformationContract {
+    static create<T extends Lessons>(url: string, code: string, name: string, category: T): ServerInformationContract<T> {
         return {
             Url: url,
             Code: code,
