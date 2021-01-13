@@ -14,6 +14,7 @@
 - This is not the official library from brainly.com
 - This version is not stable yet
 - This library is still under development
+- PLEASE DO NOT USE THIS LIBRARY FOR NEGATIVE PURPOSE!
 
 ## Contact me
 - [Whatsapp](https://wa.me/082145277488)
