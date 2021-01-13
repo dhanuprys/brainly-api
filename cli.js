@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const process = require('process');
 const chalk = require('chalk');
 const npm = require('npm');
