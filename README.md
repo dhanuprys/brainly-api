@@ -16,6 +16,15 @@
 - This library is still under development
 - PLEASE DO NOT USE THIS LIBRARY FOR NEGATIVE PURPOSE!
 
+## Let's Try with Experimental Mode
+```javascript
+const { BrainlyAPI, Server } = require('brainly-api');
+
+BrainlyAPI.startWorker({ experimental: true, server: Server.ID }, () => {
+  // ...
+});
+```
+
 ## Contact me
 - [Whatsapp](https://wa.me/082145277488)
 - [Instagram](https://instagram.com/dhanuprys)
