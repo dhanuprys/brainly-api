@@ -1,6 +1,7 @@
-import Lessons from './Lessons';
+import Lessons from '../Lessons';
 
 interface ServerInformation {
+    Url: string,
     Code: string,
     Name: string,
     Category: Lessons
