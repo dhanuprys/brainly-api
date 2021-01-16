@@ -9,7 +9,7 @@ class AnonymousHttp {
         this._serverInformation = server;
     }
 
-    requestCommonApi<T extends keyof Configurable.ApiPath.Anonymous>(apiType: T, ...args: any[]) {
+    requestCommonApi<T extends keyof Configurable.ApiPath.Anonymous>(apiType: T, config: any) {
         let action;
 
         try {
@@ -19,7 +19,7 @@ class AnonymousHttp {
             return false;
         }
 
-        return action(this._serverInformation, ...args);
+        return action(this._serverInformation, config);
     }
 }
 
