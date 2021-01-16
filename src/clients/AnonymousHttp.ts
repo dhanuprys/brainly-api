@@ -14,7 +14,7 @@ class AnonymousHttp {
 
         try {
             // Memuat library secara dinamis
-            action = require('./actions/' + apiType)
+            action = require('./actions/' + apiType).default;
         } catch (error) {
             return false;
         }
