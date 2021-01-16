@@ -10,6 +10,19 @@ namespace Configurable {
         server?: ServerInformation,
         experimental?: boolean
     }
+
+    export namespace ApiPath {
+        export type Anonymous = {
+            FindQuestion: string,
+            QuestionHighLight: string
+        };
+
+        export type Auth = Anonymous & {
+            Login: string,
+            Signup: string,
+            AskQuestion: string
+        };
+    }
 }
 
 export default Configurable;
