@@ -14,7 +14,8 @@ namespace Configurable {
     export namespace ApiPath {
         export type Anonymous = {
             FindQuestion: string,
-            QuestionHighLight: string
+            GetQuestionHighLight: string,
+            GetQuestionById: string
         };
 
         export type Auth = Anonymous & {
