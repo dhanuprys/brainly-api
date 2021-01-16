@@ -25,6 +25,11 @@ BrainlyAPI.startWorker({ experimental: true, server: Server.ID }, () => {
 });
 ```
 
+## Installing Additional Library
+```bash
+$ npx brainly-api
+```
+
 ## Contact me
 - [Whatsapp](https://wa.me/082145277488)
 - [Instagram](https://instagram.com/dhanuprys)
