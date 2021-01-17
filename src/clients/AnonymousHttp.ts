@@ -19,7 +19,7 @@ class AnonymousHttp {
             return false;
         }
 
-        return action(this._serverInformation, config);
+        return action(axios, this._serverInformation, config);
     }
 }
 
