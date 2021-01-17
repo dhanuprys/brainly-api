@@ -1,6 +1,6 @@
 import ServerInformation from '../../contracts/ServerInformation';
 
-function FindQuestion(server: ServerInformation, config: { question: string }) {
+async function FindQuestion(server: ServerInformation, config: { question: string }) {
     
 }
 
