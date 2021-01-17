@@ -1,13 +1,15 @@
 class AnswerDetail {
-    async getLike() {
+    private readonly _database: any;
+
+    constructor(database: any = {}) {
+        this._database = database;
+    }
+
+    async getCleans() {
 
     }
 
-    async getFirstAnswer() {
-
-    }
-
-    async getLastAnswer() {
+    async getPureHtml() {
 
     }
 }

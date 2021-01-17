@@ -2,16 +2,22 @@ import WithIterator from '../contracts/WithIterator';
 import QuestionDetail from './QuestionDetail';
 
 class QuestionResults implements WithIterator<QuestionDetail> {
-    async getFirstQuestion() {
+    private readonly _database: any;
 
+    constructor(database: any = {}) {
+        this._database = database;
     }
 
-    async getAllQuestion() {
-
+    async getFirstQuestion(): Promise<QuestionDetail | null> {
+        return new QuestionDetail();
     }
 
-    async getLastQuestion() {
+    async getAllQuestion(): Promise<QuestionDetail[] | null> {
+        return [new QuestionDetail()];
+    }
 
+    async getLastQuestion(): Promise<QuestionDetail | null> {
+        return new QuestionDetail();
     }
 
     *[Symbol.iterator](): Iterator<QuestionDetail> {

@@ -1,17 +1,19 @@
 import WithIterator from '../contracts/WithIterator';
-import AnswerDetail from './AnswerDetail';
+import AnswerList from './AnswerList';
 
-class QuestionDetail implements WithIterator<AnswerDetail> {
+class QuestionDetail {
+    private readonly _database: any;
+
+    constructor(database: any = {}) {
+        this._database = database;
+    }
+
     async getAskerProfile() {
         
     }
 
-    async getAnswers(): Promise<AnswerDetail[]> {
-        return [new AnswerDetail()];
-    }
-
-    *[Symbol.iterator](): Iterator<AnswerDetail> {
-
+    async getAnswers(): Promise<AnswerList> {
+        return new AnswerList();
     }
 }
 
