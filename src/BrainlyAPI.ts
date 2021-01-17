@@ -4,7 +4,7 @@ import AnonymousWorker from './workers/AnonymousWorker';
 import AuthWorker from './workers/AuthWorker';
 
 class BrainlyAPI {
-    static VERSION = require('./../package.json').version;
+    static VERSION: string = require('./../package.json').version;
 
     /**
      * Start worker adalah metode yang digunakan sebagai pembungkus
