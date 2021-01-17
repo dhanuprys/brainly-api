@@ -20,12 +20,12 @@
 ```javascript
 const { BrainlyAPI, Server } = require('brainly-api');
 
-BrainlyAPI.startWorker({ experimental: true, server: Server.ID }, () => {
+BrainlyAPI.startWorker({ experimental: true, server: Server.ID }, brainly => {
   // ...
 });
 ```
 
-## Installing Additional Library
+## Using CLI Tools
 ```bash
 $ npx brainly-api
 ```
@@ -33,3 +33,5 @@ $ npx brainly-api
 ## Contact me
 - [Whatsapp](https://wa.me/082145277488)
 - [Instagram](https://instagram.com/dhanuprys)
+
+## Thanks for using brainly-api :)
