@@ -5,6 +5,8 @@ import AuthWorker from './workers/AuthWorker';
 namespace Configurable {
     export type BrainlyWorker = (worker: AnonymousWorker | AuthWorker) => any;
 
+    export type LessonItem = number;
+
     export interface StarterConfig {
         auth?: boolean,
         server?: ServerInformation,
