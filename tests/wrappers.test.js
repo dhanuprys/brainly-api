@@ -1,5 +1,8 @@
 const { default: QuestionResults } = require('../build/wrappers/QuestionResults');
 
-xdescribe('QuestionResults workflow', () => {
+describe('QuestionResults workflow', () => {
     //new QuestionResults().;
+    test('', () => {
+        expect(true).toBe(true);
+    });
 });
