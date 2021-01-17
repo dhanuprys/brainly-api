@@ -1,4 +1,5 @@
 import Server from '../Server';
+import Configurable from '../configurable';
 import Worker from '../contracts/Worker';
 import ServerInformation from '../contracts/ServerInformation';
 import QuestionResults from '../wrappers/QuestionResults';
@@ -16,10 +17,10 @@ class AnonymousWorker implements Worker {
         return await this._client.requestCommonApi('FindQuestion', { question: question });
     }
 
-    async getQuestionHighlight(question: string, category: number): Promise<QuestionResults> {
+    async getQuestionHighlight(question: string, lesson: Configurable.LessonItem): Promise<QuestionResults> {
         return await this._client.requestCommonApi('GetQuestionHighLight', {
             question: question,
-            category: category
+            lesson: lesson
         });
     }
 
