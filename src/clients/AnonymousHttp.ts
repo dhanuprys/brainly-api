@@ -11,10 +11,11 @@ class AnonymousHttp {
 
     requestCommonApi<T extends keyof Configurable.ApiPath.Anonymous>(apiType: T, config: any) {
         let action;
+        let loadAction = (actionName: T) => require('./actions/' + actionName).default;
 
         try {
             // Memuat library secara dinamis
-            action = require('./actions/' + apiType).default;
+            action = loadAction(apiType);
         } catch (error) {
             return false;
         }
