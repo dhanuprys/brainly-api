@@ -1,11 +1,12 @@
 import WithIterator from '../contracts/WithIterator';
+import WithRawData from '../contracts/WithRawData';
 import QuestionDetail from './QuestionDetail';
 
-class QuestionResults implements WithIterator<QuestionDetail> {
-    private readonly _database: any;
+class QuestionResults implements WithIterator<QuestionDetail>, WithRawData {
+    readonly raw: any;
 
-    constructor(database: any = {}) {
-        this._database = database;
+    constructor(raw: any = {}) {
+        this.raw = raw;
     }
 
     async getFirstQuestion(): Promise<QuestionDetail | null> {
