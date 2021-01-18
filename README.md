@@ -25,6 +25,26 @@ BrainlyAPI.startWorker({ experimental: true, server: Server.ID }, async brainly 
   console.log(await brainly.findQuestion('Indonesian!!'));
 });
 ```
+## List of Available Locations
+**Example:**
+```javascript
+const { Server } = require('brainly-api');
+
+Server.{Code}
+```
+
+Code | Name | Refers to 
+---- | ----- | --------
+PL | Poland | https://brainly.pl
+RU | Russian Federation (the) | https://znanija.com
+ES | Spain | https://brainly.lat
+PT | Portugal | https://brainly.com.br
+TR | Turkey | https://eodev.com
+RO | Romania | https://brainly.ro
+ID | Indonesia | https://brainly.co.id
+HI | India | https://brainly.in
+PH | Philipines (the) | https://brainly.ph
+US | United States of America (the) | https://brainly.com
 
 ## Using CLI Tools
 ```bash
