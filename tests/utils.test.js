@@ -13,10 +13,10 @@ describe('test graphql query generator', () => {
     test('should return expected properties', () => {
         const graphqlRawData = Graphql.generate('foo', { bar: true }, { beer: false });
 
-        expect(graphqlRawData).toEqual({ 
+        expect(graphqlRawData).toEqual([{ 
             operationName: 'foo', 
             variables: { bar: true },
             query: { beer: false }
-        });
+        }]);
     });
 });
