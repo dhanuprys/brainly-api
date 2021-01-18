@@ -20,8 +20,9 @@
 ```javascript
 const { BrainlyAPI, Server } = require('brainly-api');
 
-BrainlyAPI.startWorker({ experimental: true, server: Server.ID }, brainly => {
-  // ...
+BrainlyAPI.startWorker({ experimental: true, server: Server.ID }, async brainly => {
+  // find question
+  console.log(await brainly.findQuestion('Indonesian!!'));
 });
 ```
 
