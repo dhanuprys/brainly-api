@@ -10,6 +10,8 @@
   <a href="https://circleci.com/gh/dhanuprys/brainly-api"><img src="https://circleci.com/gh/dhanuprys/brainly-api.svg?style=svg" alt="Circle CI Test Status"></a>
 </p>
 
+> Now you can get questions and answers !!
+
 ## Notes
 - This is not the official library from brainly.com
 - This version is not stable yet
@@ -54,7 +56,8 @@ $ npx brainly-api
 ```
 
 ## Contact me
-- [Whatsapp](https://wa.me/082145277488)
+- [Whatsapp](https://wa.me/082145277488)  X
+- [Twitter](https://twitter.com/dhanuprys)
 - [Instagram](https://instagram.com/dhanuprys)
 
 ## Thanks for using brainly-api :)
