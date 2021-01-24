@@ -1,6 +1,8 @@
+import Configurable from '../configurable';
+
 // static class
 class Graphql {
-    static generate(operationName: string, variables: any, query: any): any[] {
+    static generate(operationName: string, variables: any, query: string): Configurable.GraphqlQueryArray {
         return [{
             operationName: operationName,
             variables: variables,

@@ -26,6 +26,14 @@ namespace Configurable {
             AskQuestion: string
         };
     }
+
+    export type GraphqlQuery = {
+        operationName: string,
+        variables: any,
+        query: string
+    };
+
+    export type GraphqlQueryArray = GraphqlQuery[];
 }
 
 export default Configurable;
