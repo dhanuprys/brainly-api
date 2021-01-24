@@ -35,16 +35,18 @@ Server.{Code}
 
 Code | Name | Refers to 
 ---- | ----- | --------
-PL | Poland | https://brainly.pl
-RU | Russian Federation (the) | https://znanija.com
-ES | Spain | https://brainly.lat
-PT | Portugal | https://brainly.com.br
-TR | Turkey | https://eodev.com
-RO | Romania | https://brainly.ro
-ID | Indonesia | https://brainly.co.id
-HI | India | https://brainly.in
-PH | Philipines (the) | https://brainly.ph
-US | United States of America (the) | https://brainly.com
+PL | Poland | [brainly.pl](https://brainly.pl)
+RU | Russian Federation (the) | [znanija.com](https://znanija.com)
+ES | Spain | [brainly.lat](https://brainly.lat)
+PT | Portugal | [brainly.com.br](https://brainly.com.br)
+TR | Turkey | [eodev.com](https://eodev.com)
+RO | Romania | [brainly.ro](https://brainly.ro)
+ID | Indonesia | [brainly.co.id](https://brainly.co.id)
+HI | India | [brainly.in](https://brainly.in)
+PH | Philipines (the) | [brainly.ph](https://brainly.ph)
+US | United States of America (the) | [brainly.com](https://brainly.com)
+
+Source: https://www.iban.com/country-codes
 
 ## Using CLI Tools
 ```bash
