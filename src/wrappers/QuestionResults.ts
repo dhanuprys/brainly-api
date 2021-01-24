@@ -10,6 +10,7 @@ class QuestionResults implements WithIterator<QuestionDetail>, WithRawData {
         this.raw = raw;
         this._questionDetails = [];
 
+        // Remap values, raw to class
         for (const question of this.raw[0].data.questionSearch.edges) {
             this._questionDetails.push(
                 new QuestionDetail(question)
@@ -17,16 +18,25 @@ class QuestionResults implements WithIterator<QuestionDetail>, WithRawData {
         }
     }
 
+    /**
+     * Mengambil data perntanyaan pertama
+     */
     async getFirstQuestion(): Promise<QuestionDetail | null> {
         return this.raw[0].data.questionSearch.count < 1 
             ? null 
             : this._questionDetails[0];
     }
 
+    /**
+     * Mengambil seluruh data pertanyaan yang ada
+     */
     async getAllQuestion(): Promise<QuestionDetail[]> {
         return [...this._questionDetails];
     }
 
+    /**
+     * Mengambil data pertanyaan terakhir
+     */
     async getLastQuestion(): Promise<QuestionDetail | null> {
         return this.raw[0].data.questionSearch.count < 1 
             ? null 
@@ -35,6 +45,9 @@ class QuestionResults implements WithIterator<QuestionDetail>, WithRawData {
             ]);
     }
 
+    /**
+     * @interface WithIterator<> implementation
+     */
     *[Symbol.iterator](): Iterator<QuestionDetail> {
         for (const question of this._questionDetails) {
             yield question;
