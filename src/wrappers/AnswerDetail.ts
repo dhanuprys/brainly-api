@@ -1,16 +1,14 @@
-class AnswerDetail {
-    private readonly _database: any;
+import WithRawData from '../contracts/WithRawData';
 
-    constructor(database: any = {}) {
-        this._database = database;
+class AnswerDetail implements WithRawData {
+    readonly raw: any;
+
+    constructor(raw: any = {}) {
+        this.raw = raw;
     }
 
-    async getCleans() {
-
-    }
-
-    async getPureHtml() {
-
+    async getContent(): Promise<string> {
+        return <string>this.raw.content;
     }
 }
 
