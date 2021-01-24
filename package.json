@@ -31,11 +31,13 @@
     "brainly-api": "./cli.js"
   },
   "dependencies": {
-    "@types/cryptr": "^4.0.1",
     "@types/axios": "^0.14.0",
+    "@types/cryptr": "^4.0.1",
     "@types/node": "^14.14.20",
     "axios": "^0.21.1",
     "chalk": "^4.1.0",
+    "cli-highlight": "^2.1.10",
+    "commander": "^7.0.0",
     "cross-env": "^7.0.3",
     "cryptr": "^6.0.2",
     "jest": "^24.9.0",
