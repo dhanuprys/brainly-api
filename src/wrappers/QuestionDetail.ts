@@ -1,11 +1,15 @@
-import WithIterator from '../contracts/WithIterator';
+import WithRawData from '../contracts/WithRawData';
 import AnswerList from './AnswerList';
 
-class QuestionDetail {
-    private readonly _database: any;
+class QuestionDetail implements WithRawData {
+    readonly raw: any;
 
-    constructor(database: any = {}) {
-        this._database = database;
+    constructor(raw: any = {}) {
+        this.raw = raw;
+    }
+
+    async getQuestion(): Promise<string> {
+        return <string>this.raw.node.content;
     }
 
     async getAskerProfile() {
@@ -13,7 +17,7 @@ class QuestionDetail {
     }
 
     async getAnswers(): Promise<AnswerList> {
-        return new AnswerList();
+        return new AnswerList(this.raw.node.answers);
     }
 }
 
