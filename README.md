@@ -59,8 +59,14 @@ $ npx brainly-api
 ```
 
 ## Contact me :question:
+- <a href="mailto:dhanuprys@gmail.com">Gmail</a>
 - [Whatsapp](https://wa.me/082145277488)  X
 - [Twitter](https://twitter.com/dhanuprys)
 - [Instagram](https://instagram.com/dhanuprys)
+
+## License :unlock:
+Licensed under **MIT License**
+
+See [package license](https://github.com/dhanuprys/brainly-api/blob/main/LICENSE)
 
 ## Thanks for using brainly-api :wink:
