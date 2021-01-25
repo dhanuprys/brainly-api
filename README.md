@@ -1,4 +1,4 @@
-# BrainlyAPI
+# BrainlyAPI :cloud_with_lightning:
 
 ![brainly-api logo](https://raw.githubusercontent.com/dhanuprys/arts/master/brainly-api.jpg)
 
@@ -15,13 +15,13 @@
 
 > Now you can get questions and answers !!
 
-## Notes
+## Notes :interrobang:
 - This is not the official library from brainly.com
 - This version is not stable yet
 - This library is still under development
-- PLEASE DO NOT USE THIS LIBRARY FOR NEGATIVE PURPOSE!
+- PLEASE DO NOT USE THIS LIBRARY FOR NEGATIVE PURPOSE :bangbang:
 
-## Let's Try with Experimental Mode
+## Let's Try with Experimental Mode :bangbang:
 ```javascript
 const { BrainlyAPI, Server } = require('brainly-api');
 
@@ -30,7 +30,7 @@ BrainlyAPI.startWorker({ experimental: true, server: Server.ID }, async brainly 
   console.log(await brainly.findQuestion('Indonesian!!'));
 });
 ```
-## List of Available Locations
+## List of Available Locations :bangbang:
 **Example:**
 ```javascript
 const { Server } = require('brainly-api');
@@ -40,27 +40,27 @@ Server.{Code}
 
 Code | Name | Refers to 
 ---- | ----- | --------
-PL | Poland | [brainly.pl](https://brainly.pl)
+PL | Poland :poland: | [brainly.pl](https://brainly.pl)
 RU | Russian Federation (the) | [znanija.com](https://znanija.com)
 ES | Spain | [brainly.lat](https://brainly.lat)
-PT | Portugal | [brainly.com.br](https://brainly.com.br)
+PT | Portugal :portugal: | [brainly.com.br](https://brainly.com.br)
 TR | Turkey | [eodev.com](https://eodev.com)
-RO | Romania | [brainly.ro](https://brainly.ro)
-ID | Indonesia | [brainly.co.id](https://brainly.co.id)
-HI | India | [brainly.in](https://brainly.in)
-PH | Philipines (the) | [brainly.ph](https://brainly.ph)
-US | United States of America (the) | [brainly.com](https://brainly.com)
+RO | Romania :romania: | [brainly.ro](https://brainly.ro)
+ID | Indonesia :indonesia: | [brainly.co.id](https://brainly.co.id)
+HI | India :india: | [brainly.in](https://brainly.in)
+PH | Philippines (the) :philippines: | [brainly.ph](https://brainly.ph)
+US | United States of America (the) :us: | [brainly.com](https://brainly.com)
 
 Source: https://www.iban.com/country-codes
 
-## Using CLI Tools
+## Using CLI Tools :question:
 ```bash
 $ npx brainly-api
 ```
 
-## Contact me
+## Contact me :question:
 - [Whatsapp](https://wa.me/082145277488)  X
 - [Twitter](https://twitter.com/dhanuprys)
 - [Instagram](https://instagram.com/dhanuprys)
 
-## Thanks for using brainly-api :)
+## Thanks for using brainly-api :wink:
