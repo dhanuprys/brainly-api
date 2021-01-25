@@ -1,14 +1,15 @@
 # BrainlyAPI
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/dhanuprys/arts/master/brainly-api.jpg">
-  <br>
-  <a href="https://npmjs.com/package/brainly-api"><img alt="npm" src="https://img.shields.io/npm/dw/brainly-api?logo=npm"></a>
-  <a href="https://github.com/dhanuprys/brainly-api"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/dhanuprys/brainly-api/total?label=releases&logo=github"></a>
-  <a href="https://travis-ci.com/dhanuprys/brainly-api"><img src="https://travis-ci.com/dhanuprys/brainly-api.svg?branch=main" alt="Travis CI"></a>
-  <a href="https://github.com/dhanuprys/brainly-api"><img src="https://github.com/dhanuprys/brainly-api/workflows/test/badge.svg" alt="Gitub Action Test Status"></a>
-  <a href="https://circleci.com/gh/dhanuprys/brainly-api"><img src="https://circleci.com/gh/dhanuprys/brainly-api.svg?style=svg" alt="Circle CI Test Status"></a>
-</p>
+![brainly-api logo](https://raw.githubusercontent.com/dhanuprys/arts/master/brainly-api.jpg)
+
+![NPM Downloads](https://img.shields.io/npm/dm/brainly-api?logo=npm)
+![GitHub all releases](https://img.shields.io/github/downloads/dhanuprys/brainly-api/total?label=releases&logo=github)
+![Travis CI](https://travis-ci.com/dhanuprys/brainly-api.svg?branch=main)
+![Github Action](https://github.com/dhanuprys/brainly-api/workflows/test/badge.svg)
+![NPM](https://img.shields.io/npm/l/brainly-api)
+![npm (tag)](https://img.shields.io/npm/v/brainly-api/latest?label=brainly-api&logo=npm)
+![GitHub last commit](https://img.shields.io/github/last-commit/dhanuprys/brainly-api?label=github%20last%20commit&logo=github)
+![Circle CI](https://circleci.com/gh/dhanuprys/brainly-api.svg?style=svg)
 
 > Now several sample programs are provided by running "brainly-api example-list"
 
