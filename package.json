@@ -17,9 +17,11 @@
     "url": "git+https://github.com/dhanuprys/brainly-api.git"
   },
   "keywords": [
-    "Tools",
-    "API",
-    "Brainly"
+    "tools",
+    "api",
+    "brainly",
+    "unofficial",
+    "wrapper"
   ],
   "author": "Gede Dhanu Purnayasa <dhanuprys@gmail.com>",
   "license": "MIT",
