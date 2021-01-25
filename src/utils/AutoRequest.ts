@@ -1,9 +1,9 @@
 import axios, { AxiosResponse } from 'axios';
-import ServerInformation from '../contracts/ServerInformation';
+import Configurable from '../configurable';
 
 // static class
 class AutoRequest {
-    static async start(server: ServerInformation, graphqlData: any) {
+    static async start(server: Configurable.ServerInformation, graphqlData: any) {
         let axiosRequest: AxiosResponse;
         
         try {

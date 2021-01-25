@@ -1,11 +1,10 @@
 import axios from 'axios';
 import Configurable from '../configurable';
-import ServerInformation from '../contracts/ServerInformation';
 
 class AnonymousHttp {
-    private _serverInformation: ServerInformation;
+    private _serverInformation: Configurable.ServerInformation;
 
-    constructor(server: ServerInformation) {
+    constructor(server: Configurable.ServerInformation) {
         this._serverInformation = server;
     }
 

@@ -1,8 +1,8 @@
 import { AxiosStatic } from 'axios';
-import ServerInformation from '../../contracts/ServerInformation';
+import Configurable from '../../configurable';
 import QuestionDetail from '../../wrappers/QuestionDetail';
 
-function GetQuestionById(axios: AxiosStatic, server: ServerInformation, config: { id: string }) {
+function GetQuestionById(axios: AxiosStatic, server: Configurable.ServerInformation, config: { id: string }) {
     return new QuestionDetail();
 }
 

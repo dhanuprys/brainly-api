@@ -1,11 +1,11 @@
 import Server from '../Server';
 import Worker from '../contracts/Worker';
-import ServerInformation from '../contracts/ServerInformation';
+import Configurable from '../configurable';
 import QuestionResults from '../wrappers/QuestionResults';
 import QuestionDetail from '../wrappers/QuestionDetail';
 
 class AuthWorker implements Worker {
-    constructor(server: ServerInformation = Server.US) {
+    constructor(server: Configurable.ServerInformation = Server.US) {
 
     }
 
