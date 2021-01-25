@@ -10,6 +10,8 @@
   <a href="https://circleci.com/gh/dhanuprys/brainly-api"><img src="https://circleci.com/gh/dhanuprys/brainly-api.svg?style=svg" alt="Circle CI Test Status"></a>
 </p>
 
+> Now several sample programs are provided by running "brainly-api example-list"
+
 > Now you can get questions and answers !!
 
 ## Notes
