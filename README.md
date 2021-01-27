@@ -70,7 +70,7 @@ $ npx brainly-api
 ```
 
 ## Who Uses it :question:
-Currently no project names are displayed. If you want your project name included here, then [contact me](#contact-me-question) with the following format:
+Currently no project names are displayed. If you want your project name included here, then [contact me](#contact-me-phone) with the following format:
 - **projectname**: your project name
 - **projectlink**: your project link
 - **projectlogo**(optional): your project logo (600x400) or lower
