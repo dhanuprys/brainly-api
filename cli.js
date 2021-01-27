@@ -9,7 +9,7 @@ const npm = require('npm');
 
 const EXAMPLE_PATH = './examples';
 const underDevelopment = () => {
-    console.log(chalk.yellowBright('Under development...'));
+    console.log(chalk.yellowBright('😢 Under development...'));
 };
 
 program
@@ -40,6 +40,9 @@ program
             const fileName = fileList[i];
             console.log(String(i) + ': ' + fileName);
         }
+
+        console.log();
+        console.log(`Use ${chalk.bold('`brainly-api example <index>`')} to open example`);
     });
 
 program
@@ -50,17 +53,18 @@ program
         let fileName = fileList[Number(index)];
 
         if (index === undefined) {
-            console.log('Please run `brainly-api example-list`');
+            console.log(`Use ${chalk.bold('`brainly-api example-list`')} to view example list`);
             return;
         }
 
         if (fileName === undefined) {
-            console.log('Example not found');
+            console.log('😢 Example not found');
             return;
         }
 
-        fileName = path.join(EXAMPLE_PATH, fileName);
+        fileName = path.resolve(__dirname, EXAMPLE_PATH, fileName);
 
+        console.log(chalk.gray('// ' + fileName.split('\\').join('/')));
         console.log(
             highlighter.highlight(
                 fs.readFileSync(fileName).toString(),
