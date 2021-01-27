@@ -16,15 +16,15 @@ class AnonymousWorker implements Worker {
         return await this._client.requestCommonApi('FindQuestion', { question: question });
     }
 
-    async getQuestionHighlight(question: string, lesson: Configurable.LessonItem): Promise<QuestionResults> {
-        return await this._client.requestCommonApi('GetQuestionHighLight', {
+    async findQuestionHighlight(question: string, lesson: Configurable.LessonItem): Promise<QuestionResults> {
+        return await this._client.requestCommonApi('FindQuestionHighLight', {
             question: question,
             lesson: lesson
         });
     }
 
-    async getQuestionById(id: string): Promise<QuestionDetail> {
-        return await this._client.requestCommonApi('GetQuestionById', {
+    async findQuestionById(id: string): Promise<QuestionDetail> {
+        return await this._client.requestCommonApi('FindQuestionById', {
             id: id
         });
     }

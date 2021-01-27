@@ -13,15 +13,15 @@ class AuthWorker implements Worker {
 
     }
 
-    async getQuestionHighlight(question: string, category: number): Promise<QuestionResults> {
+    async findQuestionHighlight(question: string, category: number): Promise<QuestionResults> {
         return new QuestionResults();
     }
 
-    async getQuestionById(id: string): Promise<QuestionDetail> {
+    async findQuestionById(id: string): Promise<QuestionDetail> {
         return new QuestionDetail();
     }
 
-    async login(email: string, password: string) {
+    async signin(email: string, password: string) {
 
     }
 
