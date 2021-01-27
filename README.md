@@ -64,6 +64,7 @@ Feature | Status
 Find question | :heavy_check_mark:
 Find question by id | :x:
 Find question highlight | :heavy_check_mark:
+Fetch user profile | :x:
 
 
 ## Using CLI Tools :computer:
