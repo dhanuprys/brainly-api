@@ -12,8 +12,8 @@ class QuestionDetail implements WithRawData {
         return <string>this.raw.node.content;
     }
 
-    async getAskerProfile() {
-        
+    async getAuthor() {
+        return this.raw.node.author;
     }
 
     async getAnswers(): Promise<AnswerList> {

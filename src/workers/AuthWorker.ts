@@ -5,15 +5,17 @@ import QuestionResults from '../wrappers/QuestionResults';
 import QuestionDetail from '../wrappers/QuestionDetail';
 
 class AuthWorker implements Worker {
-    constructor(server: Configurable.ServerInformation = Server.US) {
+    readonly currentServer: Configurable.ServerInformation;
 
+    constructor(server: Configurable.ServerInformation = Server.US) {
+        this.currentServer = server;
     }
 
     async findQuestion(question: string): Promise<any> {
 
     }
 
-    async findQuestionHighlight(question: string, category: number): Promise<QuestionResults> {
+    async findQuestionHighlight(category: Configurable.LessonItem): Promise<QuestionResults> {
         return new QuestionResults();
     }
 
