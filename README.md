@@ -11,9 +11,11 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/dhanuprys/brainly-api?label=github%20last%20commit&logo=github)](https://github.com/dhanuprys/brainly-api)
 [![Circle CI](https://circleci.com/gh/dhanuprys/brainly-api.svg?style=shield)](https://circleci.com/gh/dhanuprys/brainly-api)
 
-> Now several sample programs are provided by running "brainly-api example-list"
+> Now several sample programs are provided by running **"brainly-api example-list"**
 
 > Now you can get questions and answers !!
+
+> Now you can use "find question highlight" to search for the highlighted questions
 
 ## Notes :bangbang:
 - This is not the official library from brainly.com
@@ -61,7 +63,7 @@ Feature | Status
 ------- | ------
 Find question | :heavy_check_mark:
 Find question by id | :x:
-Get highlight question | :x:
+Find question highlight | :heavy_check_mark:
 
 
 ## Using CLI Tools :computer:
