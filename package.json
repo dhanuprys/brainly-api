@@ -1,6 +1,6 @@
 {
   "name": "brainly-api",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "Unofficial brainly.com API",
   "main": "build/index.js",
   "scripts": {
