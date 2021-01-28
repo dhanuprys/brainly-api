@@ -23,7 +23,8 @@ namespace Configurable {
         export type Anonymous = {
             FindQuestion: string,
             FindQuestionHighLight: string,
-            FindQuestionById: string
+            FindQuestionById: string,
+            FetchUserProfile: string
         };
 
         export type Auth = Anonymous & {

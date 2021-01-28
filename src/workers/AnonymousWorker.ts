@@ -4,6 +4,7 @@ import Worker from '../contracts/Worker';
 import QuestionResults from '../wrappers/QuestionResults';
 import QuestionDetail from '../wrappers/QuestionDetail';
 import AnonymousHttp from '../clients/AnonymousHttp';
+import UserProfile from '../wrappers/UserProfile';
 
 class AnonymousWorker implements Worker {
     readonly currentServer: Configurable.ServerInformation;
@@ -14,7 +15,7 @@ class AnonymousWorker implements Worker {
         this._client = new AnonymousHttp(server);
     }
 
-    async findQuestion(question: string): Promise<any> {
+    async findQuestion(question: string): Promise<QuestionResults> {
         return await this._client.requestCommonApi('FindQuestion', { question: question });
     }
 
@@ -27,6 +28,12 @@ class AnonymousWorker implements Worker {
     async findQuestionById(id: string): Promise<QuestionDetail> {
         return await this._client.requestCommonApi('FindQuestionById', {
             id: id
+        });
+    }
+
+    async fetchUserProfile(userId: string): Promise<UserProfile> {
+        return await this._client.requestCommonApi('FetchUserProfile', {
+            userId: userId
         });
     }
 }
