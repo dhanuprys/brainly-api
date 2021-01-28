@@ -71,7 +71,7 @@ Find question highlight | findQuestionHighlight | :heavy_check_mark:
 Fetch user profile | fetchUserProfile |:heavy_check_mark:
 
 ## Enable Random User Agents :question:
-The random user agent can be activated by installing the "random-useragent" library or by running a command
+The random user agent can be activated by installing the `random-useragent` library or by running a command
 ```bash
 $ npx brainly-api tool random-useragent
 ```
