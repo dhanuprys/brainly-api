@@ -14,20 +14,15 @@ const underDevelopment = () => {
 
 program
     .name('brainly-api')
-    .version('0.0.1')
+    .version('0.0.4')
     .addHelpText('beforeAll', chalk.bold(`${chalk.greenBright('BRAINLY-API')} CLI TOOL`))
     .configureOutput({
         outputError: (errorString, write) => write(chalk.redBright(errorString))
     });
 
 program
-    .command('install-all')
-    .description('install all dependencies')
-    .action(underDevelopment);
-
-program
-    .command('install [functionality...]')
-    .description('install specify package')
+    .command('tool <tooltype>')
+    .description('install required tool, e.g auth, random-useragent')
     .action(underDevelopment);
 
 program
