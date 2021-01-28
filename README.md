@@ -11,6 +11,8 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/dhanuprys/brainly-api?label=github%20last%20commit&logo=github)](https://github.com/dhanuprys/brainly-api)
 [![Circle CI](https://circleci.com/gh/dhanuprys/brainly-api.svg?style=shield)](https://circleci.com/gh/dhanuprys/brainly-api)
 
+> Now you can retrieve user profiles !! [list of feature](#list-of-features-astonished)
+
 > Now several sample programs are provided by running **"brainly-api example-list"**
 
 > Now you can get questions and answers !!
@@ -64,7 +66,7 @@ Feature | Status
 Find question | :heavy_check_mark:
 Find question by id | :x:
 Find question highlight | :heavy_check_mark:
-Fetch user profile | :x:
+Fetch user profile | :heavy_check_mark:
 
 
 ## Using CLI Tools :computer:
