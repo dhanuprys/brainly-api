@@ -3,6 +3,7 @@ import Worker from '../contracts/Worker';
 import Configurable from '../configurable';
 import QuestionResults from '../wrappers/QuestionResults';
 import QuestionDetail from '../wrappers/QuestionDetail';
+import UserProfile from '../wrappers/UserProfile';
 
 class AuthWorker implements Worker {
     readonly currentServer: Configurable.ServerInformation;
@@ -21,6 +22,10 @@ class AuthWorker implements Worker {
 
     async findQuestionById(id: string): Promise<QuestionDetail> {
         return new QuestionDetail();
+    }
+
+    async fetchUserProfile(userId: string): Promise<UserProfile> {
+        return new UserProfile();
     }
 
     async signin(email: string, password: string) {
