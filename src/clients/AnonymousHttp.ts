@@ -8,7 +8,7 @@ class AnonymousHttp {
         this._serverInformation = server;
     }
 
-    requestCommonApi<T extends keyof Configurable.ApiPath.Anonymous>(apiType: T, config: any) {
+    requestCommonApi<TReturn, T extends keyof Configurable.ApiPath.Anonymous>(apiType: T, config: any): TReturn {
         let action;
         let loadAction = (actionName: T) => require('./actions/' + actionName).default;
 
@@ -16,7 +16,7 @@ class AnonymousHttp {
             // Memuat library secara dinamis
             action = loadAction(apiType);
         } catch (error) {
-            return false;
+            throw new Error('Action module not found');
         }
 
         return action(axios, this._serverInformation, config);
