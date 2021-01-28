@@ -44,7 +44,6 @@
     "cryptr": "^6.0.2",
     "jest": "^24.9.0",
     "npm": "^6.14.11",
-    "pkg.json": "^2.0.8",
     "random-useragent": "^0.5.0",
     "rimraf": "^3.0.2",
     "typescript": "^4.1.3"
