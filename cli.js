@@ -7,7 +7,7 @@ const highlighter = require('cli-highlight');
 const chalk = require('chalk');
 const npm = require('npm');
 
-const EXAMPLE_PATH = './examples';
+const EXAMPLE_PATH = path.resolve(__dirname, './examples');
 const underDevelopment = () => {
     console.log(chalk.yellowBright('😢 Under development...'));
 };
@@ -57,7 +57,7 @@ program
             return;
         }
 
-        fileName = path.resolve(__dirname, EXAMPLE_PATH, fileName);
+        fileName = path.resolve(EXAMPLE_PATH, fileName);
 
         console.log(chalk.gray('// ' + fileName.split('\\').join('/')));
         console.log(
