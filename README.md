@@ -59,15 +59,16 @@ US | United States of America (the) :us: | [brainly.com](https://brainly.com)
 Source :information_source: : https://www.iban.com/country-codes
 
 ## List of Features :astonished:
-All the features below can only be used anonymously (cannot be used in auth mode) :crying_cat_face:.
+All the features below can only be used anonymously (temporarily disabled in auth mode) :crying_cat_face:.
 
-Feature | Status
-------- | ------
-Find question | :heavy_check_mark:
-Find question by id | :x:
-Find question highlight | :heavy_check_mark:
-Fetch user profile | :heavy_check_mark:
+All the available features are still under development and will continue to be improved.
 
+Feature | Method | Status
+------- | ------ | ------
+Find question | findQuestion | :heavy_check_mark:
+Find question by id | :x: | :x:
+Find question highlight | findQuestionHighlight | :heavy_check_mark:
+Fetch user profile | fetchUserProfile |:heavy_check_mark:
 
 ## Using CLI Tools :computer:
 ```bash
