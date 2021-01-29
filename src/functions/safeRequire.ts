@@ -4,7 +4,11 @@ function safeRequire<TReturn>(packageName: string, defaultReturn: any = null): T
     try {
         packageLoader = require(packageName);
     } catch (loadError) {
-        return defaultReturn;
+        if (loadError.code === 'MODULE_NOT_FOUND') {
+            return defaultReturn;
+        }
+
+        throw loadError;
     }
 
     // typescript pacakge load
