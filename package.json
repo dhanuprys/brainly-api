@@ -1,6 +1,6 @@
 {
   "name": "brainly-api",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "description": "Unofficial brainly.com API",
   "main": "build/index.js",
   "scripts": {
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/dhanuprys/brainly-api#readme",
   "bin": {
-    "brainly-api": "./cli.js"
+    "brainly-api": "./bin/brainly-api.js"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
