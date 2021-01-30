@@ -10,9 +10,9 @@ const underDevelopment = () => {
     console.log(chalk.yellowBright('😢 Under development...'));
 };
 const dynamicCommands: Partial<any> = {
-    exampleList: safeRequire<any>('@brainly-api/example-list'),
-    localServer: safeRequire<any>('@brainly-api/local-server'),
-    docsServer: safeRequire<any>('@brainly-api/docs-server')
+    exampleList: safeRequire<any>('@brainly-api-tools/example-list'),
+    localServer: safeRequire<any>('@brainly-api-tools/local-server'),
+    docsServer: safeRequire<any>('@brainly-api-tools/docs-server')
 };
 
 program
