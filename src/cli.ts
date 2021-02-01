@@ -1,3 +1,4 @@
+import { Server } from './index';
 import { program } from 'commander';
 import chalk from 'chalk';
 import safeRequire from './functions/safeRequire';
@@ -23,6 +24,18 @@ program
     .command('tool <tooltype>')
     .description('install required tool, e.g auth, random-useragent')
     .action(underDevelopment);
+
+program
+    .command('server-locations')
+    .option('-r, --raw', 'display raw data')
+    .description('show all available server locations')
+    .action((option) => {
+        if (option.raw) {
+            console.log('Now raw option is not supported yet');
+        }
+        
+        console.log(Server);
+    });
 
 for (const commandName in dynamicCommands) {
     const dynamicCommand: any = dynamicCommands[commandName];
