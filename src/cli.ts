@@ -1,11 +1,7 @@
-import fs from 'fs';
-import path from 'path';
 import { program } from 'commander';
-import highlighter = require('cli-highlight');
 import chalk from 'chalk';
 import safeRequire from './functions/safeRequire';
 
-const EXAMPLE_PATH = path.resolve(__dirname, './examples');
 const underDevelopment = () => {
     console.log(chalk.yellowBright('😢 Under development...'));
 };
