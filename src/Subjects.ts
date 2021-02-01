@@ -1,4 +1,4 @@
-class Lessons {
+class Subjects {
     static PL = {
 
     }
@@ -82,4 +82,4 @@ class Lessons {
     }
 }
 
-export default Lessons;
+export default Subjects;

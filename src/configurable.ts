@@ -6,11 +6,11 @@ namespace Configurable {
 
     export type LessonItem = number;
 
-    export interface ServerInformation<TLessons = {}> {
+    export interface ServerInformation<TSubjects = {}> {
         Url: string,
         Code: string,
         Name: string,
-        Lessons: TLessons
+        Subjects: TSubjects
     }
 
     export interface StarterConfig {
