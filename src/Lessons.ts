@@ -58,7 +58,27 @@ class Lessons {
     }
 
     static US = {
-
+        Mathematics: 2,
+        History: 5,
+        English: 1,
+        Biology: 8,
+        Chemistry: 18,
+        Physics: 15,
+        Sociology: 3,
+        AdvancedPlacement: 31,
+        Exam: 32,
+        Geography: 7,
+        Health: 6,
+        Arts: 21,
+        Business: 4,
+        Informatics: 20,
+        French: 29,
+        German: 30,
+        Spanish: 28,
+        WorldLanguange: 22,
+        Medicine: 33,
+        Law: 34,
+        Engineering: 35
     }
 }
 
