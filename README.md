@@ -102,6 +102,10 @@ Currently no project names are displayed. If you want your project name included
 - [Twitter](https://twitter.com/dhanuprys)
 - [Instagram](https://instagram.com/dhanuprys)
 
+## Code of Conduct :busts_in_silhouette:
+See [code of conduct](https://github.com/dhanuprys/brainly-api/blob/main/CODE_OF_CONDUCT.md)
+
+
 ## Contributing :pencil:
 Thank you for wanting to contribute to this project. The contribution page can be found on
 [contribution page](https://github.com/dhanuprys/brainly-api/blob/main/CONTRIBUTING.md)
