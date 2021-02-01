@@ -11,11 +11,11 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/dhanuprys/brainly-api?label=github%20last%20commit&logo=github)](https://github.com/dhanuprys/brainly-api)
 [![Circle CI](https://circleci.com/gh/dhanuprys/brainly-api.svg?style=shield)](https://circleci.com/gh/dhanuprys/brainly-api)
 
+> The CLI has been upgraded to version 0.0.5 !!
+
 > Now some commands have been divided into sections and must be installed separately
 
 > Now you can retrieve user profiles !! [list of feature](#list-of-features-astonished)
-
-> Now you can get questions and answers !!
 
 > Now you can use "find question highlight" to search for the highlighted questions
 
