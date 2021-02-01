@@ -14,7 +14,7 @@ const dynamicCommands: Partial<any> = {
 
 program
     .name('brainly-api')
-    .version('0.0.4')
+    .version('0.0.5')
     .addHelpText('beforeAll', chalk.bold(`${chalk.greenBright('BRAINLY-API')} CLI TOOL`))
     .configureOutput({
         outputError: (errorString, write) => write(chalk.redBright(errorString))
@@ -33,7 +33,7 @@ program
         if (option.raw) {
             console.log('Now raw option is not supported yet');
         }
-        
+
         console.log(Server);
     });
 
