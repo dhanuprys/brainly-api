@@ -11,9 +11,9 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/dhanuprys/brainly-api?label=github%20last%20commit&logo=github)](https://github.com/dhanuprys/brainly-api)
 [![Circle CI](https://circleci.com/gh/dhanuprys/brainly-api.svg?style=shield)](https://circleci.com/gh/dhanuprys/brainly-api)
 
-> Now you can retrieve user profiles !! [list of feature](#list-of-features-astonished)
+> Now some commands have been divided into sections and must be installed separately
 
-> Now several sample programs are provided by running **"brainly-api example-list"**
+> Now you can retrieve user profiles !! [list of feature](#list-of-features-astonished)
 
 > Now you can get questions and answers !!
 
@@ -70,18 +70,26 @@ Find question by id | :x: | :x:
 Find question highlight | findQuestionHighlight | :heavy_check_mark:
 Fetch user profile | fetchUserProfile |:heavy_check_mark:
 
+## Using CLI Tools :computer:
+```bash
+$ npx brainly-api
+```
+
+## Install "Program Examples" :question:
+```bash
+$ npm i @brainly-api-tools/example-list
+```
+
+```bash 
+$ npx brainly-api
+```
+
 ## Enable Random User Agents :question:
 The random user agent can be activated by installing the `random-useragent` library or by running a command
 ```bash
 $ npx brainly-api tool random-useragent
 ```
 and then the tool will automatically install the random-useragent package and activate it.
-
-## Using CLI Tools :computer:
-```bash
-$ npx brainly-api
-```
-
 ## Who Uses it :question:
 Currently no project names are displayed. If you want your project name included here, then [contact me](#contact-me-phone) with the following format:
 - **projectname**: your project name
