@@ -1,29 +1,29 @@
 class Subjects {
-    static PL = {
+    static readonly PL = {
 
     }
     
-    static RU = {
+    static readonly RU = {
 
     }
 
-    static ES = {
+    static readonly ES = {
 
     }
 
-    static PT = {
+    static readonly PT = {
 
     }
 
-    static TR = {
+    static readonly TR = {
 
     }
 
-    static RO = {
+    static readonly RO = {
 
     }
 
-    static ID = {
+    static readonly ID = {
         Matematika: 2,
         BahasaIndonesia: 1,
         PPKn: 9,
@@ -49,15 +49,37 @@ class Subjects {
         BahasaPerancis: 17
     }
 
-    static HI = {
+    static readonly HI = {
+        Hindi: 1,
+        Math: 2,
+        History: 3,
+        English: 4,
+        Geography: 5,
+        Biology: 6,
+        Physics: 7,
+        Chemistry: 8,
+        SocialScience: 9,
+        EnvironmentalScience: 10,
+        ComputerScience: 11,
+        IndiaLanguange: 12,
+        Chinese: 13,
+        French: 14,
+        WorldLanguangesArt: 15,
+        Music: 16,
+        Science: 17,
+        Economy: 18,
+        PoliticalScience: 19,
+        Sociology: 20,
+        BusinessStudies: 21,
+        Psychology: 22,
+        Accountancy: 23
+    }
+
+    static readonly PH = {
 
     }
 
-    static PH = {
-
-    }
-
-    static US = {
+    static readonly US = {
         Mathematics: 2,
         History: 5,
         English: 1,
