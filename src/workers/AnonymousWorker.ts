@@ -5,8 +5,9 @@ import QuestionResults from '../wrappers/QuestionResults';
 import QuestionDetail from '../wrappers/QuestionDetail';
 import AnonymousHttp from '../clients/AnonymousHttp';
 import UserProfile from '../wrappers/UserProfile';
+import WithCurrentServer from '../contracts/WithCurrentServer';
 
-class AnonymousWorker implements Worker {
+class AnonymousWorker implements Worker, WithCurrentServer {
     readonly currentServer: Configurable.ServerInformation;
     private _client: AnonymousHttp;
 
