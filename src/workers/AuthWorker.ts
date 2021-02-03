@@ -1,39 +1,25 @@
 import Server from '../Server';
+import VirtualBrowser from '../utils/VirtualBrowser';
 import Worker from '../contracts/Worker';
 import Configurable from '../configurable';
-import QuestionResults from '../wrappers/QuestionResults';
-import QuestionDetail from '../wrappers/QuestionDetail';
-import UserProfile from '../wrappers/UserProfile';
+import WithCurrentServer from '../contracts/WithCurrentServer';
 
-class AuthWorker implements Worker {
+class AuthWorker implements WithCurrentServer {
     readonly currentServer: Configurable.ServerInformation;
+    private _browser;
 
     constructor(server: Configurable.ServerInformation = Server.US) {
         this.currentServer = server;
-    }
-
-    async findQuestion(question: string): Promise<any> {
-
-    }
-
-    async findQuestionHighlight(category: Configurable.LessonItem): Promise<QuestionResults> {
-        return new QuestionResults();
-    }
-
-    async findQuestionById(id: string): Promise<QuestionDetail> {
-        return new QuestionDetail();
-    }
-
-    async fetchUserProfile(userId: string): Promise<UserProfile> {
-        return new UserProfile();
+        this._browser = new VirtualBrowser();
     }
 
     async signin(email: string, password: string) {
-
+        throw new Error('On development');
     }
 
-    async signup(email: string, password: string, country: string, birthday: string) {
-
+    async signup(email: string, password: string, countryById: string, birthday: [string, string, string]) {
+        await this._browser.launch();
+        await this._browser.signup(email, password, countryById, birthday);
     }
 }
 
