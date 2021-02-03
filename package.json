@@ -12,6 +12,9 @@
     "postinstall:build": "npm run build && node ./postinstall.js",
     "postinstall": "cross-env BUILD_MODE=1 npm run postinstall:build"
   },
+  "engines": {
+    "node": ">=10.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dhanuprys/brainly-api.git"
