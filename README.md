@@ -105,6 +105,8 @@ Currently no project names are displayed. If you want your project name included
 ## Code of Conduct :busts_in_silhouette:
 See [code of conduct](https://github.com/dhanuprys/brainly-api/blob/main/CODE_OF_CONDUCT.md)
 
+## Support My Other Project :link:
+- [Yuna BotEmulator](https://github.com/dhanuprys/yuna-botemulator)
 
 ## Contributing :pencil:
 Thank you for wanting to contribute to this project. The contribution page can be found on
