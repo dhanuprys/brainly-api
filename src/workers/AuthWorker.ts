@@ -19,7 +19,8 @@ class AuthWorker implements WithCurrentServer {
 
     async signup(email: string, password: string, countryById: string, birthday: [string, string, string]) {
         await this._browser.launch();
-        await this._browser.signup(email, password, countryById, birthday);
+        throw new Error('On development');
+        //await this._browser.signup(email, password, countryById, birthday);
     }
 }
 
