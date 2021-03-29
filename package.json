@@ -13,7 +13,7 @@
     "postinstall": "cross-env BUILD_MODE=1 npm run postinstall:build"
   },
   "engines": {
-    "node": ">=10.x"
+    "node": ">=12.x"
   },
   "repository": {
     "type": "git",
