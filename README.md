@@ -107,6 +107,7 @@ See [code of conduct](https://github.com/dhanuprys/brainly-api/blob/main/CODE_OF
 
 ## Support My Other Project :link:
 - [Yuna BotEmulator](https://github.com/dhanuprys/yuna-botemulator)
+- [Straight.it](https://github.com/dhanuprys/straight-it)
 
 ## Contributing :pencil:
 Thank you for wanting to contribute to this project. The contribution page can be found on
