@@ -1,0 +1,23 @@
+{
+  "name": "@brainly-api-tools/example-list",
+  "version": "0.0.2",
+  "description": "Part of package brainly-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhanuprys/brainly-api.example-list.git"
+  },
+  "author": "Gede Dhanu Purnayasa <dhanuprys@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhanuprys/brainly-api.example-list/issues"
+  },
+  "homepage": "https://github.com/dhanuprys/brainly-api.example-list#readme",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^0.21.1"
+  }
+}
