@@ -16,5 +16,9 @@
     "server"
   ],
   "author": "Gede Dhanu Purnayasa <dhanuprys@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "d7cb3ec980312090ae6189f4bfc788ab7bbc13f4"
 }
