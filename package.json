@@ -6,9 +6,10 @@
   "scripts": {
     "test": "npm run jesttest",
     "jesttest": "jest --verbose --passWithNoTests",
-    "release": "rimraf ./build && lerna publish && tsc",
+    "release": "rimraf ./build && npm publish && tsc",
     "build": "rimraf ./build && tsc",
     "watch": "rimraf ./build && tsc -w",
+    "release-childs": "lerna publish",
     "postinstall:build": "npm run build && node ./postinstall.js",
     "postinstall": "cross-env BUILD_MODE=1 npm run postinstall:build"
   },
