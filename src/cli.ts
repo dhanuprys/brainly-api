@@ -8,7 +8,7 @@ const underDevelopment = () => {
 };
 const dynamicCommands: Partial<any> = {
     exampleList: safeRequire<any>('@brainly-api-tools/example-list'),
-    localServer: safeRequire<any>('@brainly-api-tools/local-server'),
+    portableServer: safeRequire<any>('@brainly-api-tools/portable-server'),
     docsServer: safeRequire<any>('@brainly-api-tools/docs-server')
 };
 
