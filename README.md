@@ -90,8 +90,8 @@ $ npx brainly-api tool random-useragent
 ```
 and then the tool will automatically install the random-useragent package and activate it.
 
-# Troubleshooting 😠
-## Deploy to the server
+## Troubleshooting 😠
+### Deploy to the server
 Many people say that brainly-api has problems when deploying to Heroku. This was not caused by a flaw in the program, but from the security of the Brainly itself. They use Cloudflare for security.
 As another experiment, brainly-api works well with Microsoft Azure.
 If you have any suggestions for deploying brainly-api for free, you can do a pull request.
