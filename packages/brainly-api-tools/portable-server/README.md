@@ -1,2 +1,4 @@
-# brainly-api.example-list
-Part of package brainly api
+## Run the app
+```cmd
+$ npx brainly-api portable-server
+```
