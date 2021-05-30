@@ -13,9 +13,7 @@
 [![Lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 > Now some commands have been divided into sections and must be installed separately
-
-> Now you can retrieve user profiles !! [list of feature](#list-of-features-astonished)
-
+> 
 > Now you can use "find question highlight" to search for the highlighted questions
 
 ## Notes ‼️
@@ -53,7 +51,7 @@ RO | Romania 🇷🇴 | [brainly.ro](https://brainly.ro)
 ID | Indonesia 🇮🇩 | [brainly.co.id](https://brainly.co.id)
 HI | India 🇮🇳 | [brainly.in](https://brainly.in)
 PH | Philippines (the) 🇵🇭 | [brainly.ph](https://brainly.ph)
-US | United States of America (the) 🇺🇸 | [brainly.com](https://brainly.com)
+US | United States of America (the) 🇺🇸 | [brainly.com](https://brainly.com) (deprecated)
 
 Source ℹ️ : https://www.iban.com/country-codes
 
@@ -74,27 +72,37 @@ Fetch user profile | fetchUserProfile | ✔️
 $ npx brainly-api
 ```
 
-## Install "Program Examples" ❓
-```bash
-$ npm i @brainly-api-tools/example-list
-```
-
-```bash 
-$ npx brainly-api
-```
+## Brainly API Tools (@brainly-api-tools) ‼️
+Brainly api makes helper tools to simplify the development process. Here is a list of tools that can be used:
+- [@brainly-api-tools/example-list](https://npmjs.com/package/@brainly-api-tools/example-list)
+- [@brainly-api-tools/portable-server](https://npmjs.com/package/@brainly-api-tools/portable-server)
+- If you have other tools, you can contact me to be included in the list
 
 ## Enable Random User Agents ❓
-The random user agent can be activated by installing the `random-useragent` library or by running a command.
-```bash
-$ npx brainly-api tool random-useragent
-```
-and then the tool will automatically install the random-useragent package and activate it.
+The random user agent can be activated by installing the `random-useragent` library.
+
+## API
+### AnonymousWorker
+
+##### `AnonymousWorker.findQuestion(question: string)`
+Used to search for questions based on the server and search queries.
+
+##### `AnonymousWorker.findQuestionById(id: string)`
+Used to search for questions based on the server and id.
+
+##### `AnonymousWorker.fetchUserProfile(userId: string)`
+> Under development
+> 
+##### `AnonymousWorker.findQuestionHighlight(lesson: number)`
+Used to search for highlight questions based on the server and lesson type.
 
 ## Troubleshooting 😠
 ### Deploy to the server
 Many people say that brainly-api has problems when deploying to Heroku. This was not caused by a flaw in the program, but from the security of the Brainly itself. They use Cloudflare for security.
 As another experiment, brainly-api works well with Microsoft Azure.
 If you have any suggestions for deploying brainly-api for free, you can do a pull request.
+### US Server restricted anywhere
+Usually, many people ask why when the test on localhost is running well while on hosting it gives a 403 error. However, in this case, if you use US as the server then it will not work well on local and hosting. This is due to the security of Cloudflare.
 
 ## Who Uses it ❓
 Currently no project names are displayed. If you want your project name included here, then [contact me](#contact-me-phone) with the following format:
@@ -112,7 +120,6 @@ Currently no project names are displayed. If you want your project name included
 See [code of conduct](https://github.com/dhanuprys/brainly-api/blob/main/CODE_OF_CONDUCT.md)
 
 ## Support My Other Project 🔗
-- [Yuna BotEmulator](https://github.com/dhanuprys/yuna-botemulator)
 - [Straight.it](https://github.com/dhanuprys/straight-it)
 
 ## Contributing 📝
