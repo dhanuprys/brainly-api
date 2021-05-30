@@ -22,6 +22,7 @@
   },
   "gitHead": "d7cb3ec980312090ae6189f4bfc788ab7bbc13f4",
   "dependencies": {
+    "brainly-api": "^0.0.41",
     "express": "^4.17.1"
   }
 }
