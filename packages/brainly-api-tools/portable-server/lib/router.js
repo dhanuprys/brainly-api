@@ -2,10 +2,10 @@ const { BrainlyAPI, Server } = require('brainly-api');
 const { createNumericLiteral } = require('typescript');
 
 module.exports = function (app) {
-    const underDevelopment = (req, res) => {
-        console.log(req.query);
-        res.send('Under development');
-    }
+    // const underDevelopment = (req, res) => {
+    //     console.log(req.query);
+    //     res.send('Under development');
+    // }
 
     const createBrainlyWorker = (server) => {
         return (cb) => {
@@ -54,7 +54,7 @@ module.exports = function (app) {
     app.get('/v1/questionhighlight', (req, res) => {
         // lesson, server
         req.brainly(async brainly => {
-            brainly.findQuestionHighlight(req.query.userId).then(result => {
+            brainly.findQuestionHighlight(req.query.lesson).then(result => {
                 res.send(result.raw);
             }).catch(err => {
                 console.log(err);
