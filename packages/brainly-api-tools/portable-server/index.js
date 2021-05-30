@@ -1,10 +1,12 @@
+const core = require('./lib/core');
+
 function registerProgram(program) {
     program
         .command('portable-server')
         .option('-p, --port <port>', 'Manually set server port')
         .description('start portable server')
         .action((option) => {
-            console.log(option)
+            core.execute(option.port);
         });
 }
 
