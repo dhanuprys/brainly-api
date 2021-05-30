@@ -22,7 +22,7 @@ namespace Configurable {
     export namespace ApiPath {
         export type Anonymous = {
             FindQuestion: string,
-            FindQuestionHighLight: string,
+            FindQuestionHighlight: string,
             FindQuestionById: string,
             FetchUserProfile: string
         };

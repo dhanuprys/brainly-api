@@ -21,7 +21,7 @@ class AnonymousWorker implements Worker, WithCurrentServer {
     }
 
     async findQuestionHighlight(lesson: Configurable.LessonItem): Promise<QuestionResults> {
-        return await this._client.requestCommonApi('FindQuestionHighLight', {
+        return await this._client.requestCommonApi('FindQuestionHighlight', {
             lesson: lesson
         });
     }
