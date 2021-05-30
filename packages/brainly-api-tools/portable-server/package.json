@@ -1,6 +1,6 @@
 {
   "name": "@brainly-api-tools/portable-server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Portable server for brainly-api",
   "main": "index.js",
   "scripts": {
